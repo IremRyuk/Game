@@ -1,0 +1,362 @@
+// centers
+.centers {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    .cenP {
+        color: red;
+        font-weight: bolder;
+        align-items: center;
+        font-size: xx-large;
+    }
+    .fa-arrow-left-long {
+        width: 10vw;
+        font-size: 50px;
+        color: red;
+        transform: rotate(-20deg);
+    }
+    .fa-arrow-right-long {
+        width: 10vw;
+        font-size: 50px;
+        color: red;
+        transform: rotate(20deg);
+    }
+}
+// mainCity
+.mainCity {
+    width: 100vw;
+    height: 5vh;
+    background-color: red;
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+    .cityP {
+        cursor: pointer;
+        width: max-content;
+        height: min-content;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: 0.4s;
+        margin: 0;
+    }
+    .cityP:hover {
+        background-color: black;
+        color: red;
+    }
+}
+// offer
+.offer {
+    margin-top: 5vh;
+    width: 100vw;
+    height: auto;
+    display: none;
+}
+.offerForm {
+    display: block;
+    width: 40vw;
+    height: min-content;
+    background-color: red;
+    line-height: 55px;
+    border-radius: 2.4mm;
+    .offLab {
+        color: black;
+        font-weight: bold;
+        transition: 0.7s;
+        cursor: pointer;
+        font-size: xx-large;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 2.4mm;
+    }
+    .offLab:hover {
+        background-color: black;
+        color: red;
+    }
+}
+.ofInp {
+    width: 50%;
+    background-color: black;
+    color: red;
+    font-size: large;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid black;
+    padding-left: 10px;
+    border-radius: 2.4mm;
+    transition: 0.3s;
+}
+.ofInp:hover {
+    border: 4px solid green;
+}
+.offerSubmit {
+    background-color: black;
+    font-size: xx-large;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1.4mm;
+    color: red;
+    transition: 0.7s;
+    border: 2px solid aqua;
+}
+.attrAddBtn {
+    animation: attrBtn 1s infinite;
+}
+@keyframes attrBtn {
+    0% {
+        padding: 0;
+        border: none;
+    }
+    100% {
+        border: 4px solid yellow;
+    }
+}
+.attrAddBtnG {
+    animation: attrBtnG 1s infinite;
+}
+@keyframes attrBtnG {
+    0% {
+        padding: 0;
+        border: none;
+    }
+    100% {
+        border: 4px solid green;
+    }
+}
+//   jobs
+
+.jobs {
+    margin-top: 5vh;
+    width: 100vw;
+    height: auto;
+    display: none;
+}
+.jobsForm {
+    background-color: red;
+    width: 50%;
+    height: min-content;
+    border: 2px solid black;
+    border-radius: 2mm;
+}
+.offLab {
+    color: black;
+    font-weight: bold;
+    transition: 0.7s;
+    cursor: pointer;
+    font-size: xx-large;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 2.4mm;
+}
+.offLab:hover {
+    background-color: black;
+    color: red;
+}
+.jobsSec {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    background-color: red;
+    outline: none;
+    border: 7px solid black;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 2mm;
+    .opt {
+        background-color: red;
+        color: black;
+        font-weight: bolder;
+    }
+}
+.jobsTxt {
+    margin-top: 20px;
+    width: 80%;
+    height: 20vh;
+    background-color: red;
+    color: black;
+    resize: none;
+    outline: none;
+    border: 7px solid black;
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 2mm;
+}
+.jobsTxt:hover {
+    padding: 10px;
+}
+.jobSub {
+    width: 7vw;
+    height: 5vh;
+    font-weight: bold;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 2.4mm;
+    cursor: pointer;
+    background-color: black;
+    color: red;
+    font-weight: bold;
+    margin: 20px;
+}
+.jobSub:hover {
+    background-color: aqua;
+}
+.jobsInp {
+    display: none;
+    width: 40vw;
+    outline: none;
+    padding-left: 20px;
+    font-size: x-large;
+    border: 2px solid black;
+    font-weight: bold;
+    transition: 0.4s;
+    background-color: black;
+    color: red;
+    border-radius: 1.4mm;
+    margin: 10px;
+}
+.jobsInp:focus {
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 2.4mm;
+}
+//   ghost
+.ghost {
+    position: absolute;
+    bottom: 10%;
+    right: -100%;
+    width: 15vw;
+    height: 10vh;
+    background-color: rgb(0, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.7;
+    cursor: pointer;
+    border: 4px solid black;
+    border-radius: 4.4mm;
+    color: black;
+    transition: 0.4s;
+}
+// ghost
+@media screen and (max-width:900px) {
+    .centers {
+        .cenP {
+            font-size: x-large;
+        }
+        .fa-arrow-left-long {
+            width: 10vw;
+            font-size: 40px;
+            transform: rotate(-30deg);
+        }
+        .fa-arrow-right-long {
+            width: 10vw;
+            font-size: 40px;
+            transform: rotate(30deg);
+        }
+    }
+    .mainCity {
+        font-size: x-large;
+        font-weight: bold;
+        justify-content: space-evenly;
+        .cityP {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+    .offerForm {
+        height: 50vh;
+        line-height: 45px;
+        .offLab {
+            font-size: x-large;
+        }
+        .ofInp {
+            width: 70%;
+            font-size: small;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        .ofInp:hover {
+            border: 4px solid green;
+        }
+        .offerSubmit {
+            font-size: large;
+            font-weight: bold;
+        }
+    }
+    .jobsForm {
+        width: 70%;
+    }
+    .jobSub {
+        width: 17vw;
+    }
+}
+@media screen and (max-width:700px) {
+    .centers {
+        .cenP {
+            font-size: x-large;
+        }
+        .fa-arrow-left-long {
+            width: 10vw;
+            font-size: 30px;
+            transform: rotate(-30deg);
+        }
+        .fa-arrow-right-long {
+            width: 10vw;
+            font-size: 30px;
+            transform: rotate(30deg);
+        }
+    }
+    .offerForm {
+        width: 90vw;
+        height: 50vh;
+        line-height: 45px;
+        .offLab {
+            font-size: large;
+        }
+        .ofInp {
+            width: 80%;
+            font-size: small;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        .ofInp:hover {
+            border: 4px solid green;
+        }
+        .offerSubmit {
+            font-size: large;
+            font-weight: bold;
+        }
+    }
+    .jobsForm {
+        width: 70%;
+    }
+    .jobSub {
+        width: 17vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .mainCity {
+        font-size: large;
+        font-weight: bold;
+        justify-content: center;
+        .cityP {
+            width: 52%;
+            height: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .jobsForm {
+        width: 90%;
+    }
+    .jobSub {
+        width: 17vw;
+    }
+}

@@ -1,0 +1,142 @@
+.home{
+    position: relative;
+    width: 100vw;
+    height: auto;
+}
+.slideshow{
+    width: 100vw;
+    height: 70vh;
+}
+.slide-home{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+// search
+.search-input{
+    width: 20vw;
+    height: 5vh;
+    font-size: x-large;
+    border: 5px solid red;
+    outline: none;
+    border-radius: 2.4mm;
+    transition: 0.3s;
+    margin-top: 1vh;
+    font-weight: 500;
+    padding-left:10px;
+}
+.search-input:hover{
+    width: 22vw;
+    border: 4px solid red;
+    border-radius: 2.4mm;
+}
+// category
+.category{
+    position: fixed;
+    top: 15%;
+    left: 0%;
+    width: 20px;
+    height: 40vh;
+    background-color: red;
+    border-top-right-radius: 2.4mm;
+    border-bottom-right-radius: 2.4mm;
+}
+.categ{
+    display:flex;
+    text-align: start;   
+    font-size: large;
+    margin-top: 10vh;
+    color: white;
+    font-weight: bold;
+    transform: rotate(90deg);
+}
+.category:hover{
+    width: max-content;
+    height: 40vh;
+}
+.category:hover .categ{
+    display: none;
+}
+.category:hover .buttonf{
+    display: block;
+}
+.buttonf{
+    display: none;
+    width: 100%;
+    height: 5vh;
+    background-color: red;
+    border: none;
+    color: black;
+    cursor: pointer;
+    margin-top: 2vh;
+    font-size: medium;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+.buttonf:hover{
+    background-color: black;
+    color: red;
+}
+// main
+.mainItems{
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: 17vw 17vw 17vw 17vw 17vw;
+    width: 100vw;
+    height: auto;
+    justify-content: space-evenly;
+}
+// AD
+.offerAD{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 170px;
+    height: 50px;
+    z-index: 11;
+    background:transparent;
+    color: red;
+    font-size: xx-large;
+    text-align: flex-start;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 1mm;
+}
+.offerAD:hover{
+    background-color: black;
+}
+@media screen and (max-width:1200px) {
+    .search-input{
+        width: 30vw;
+    }
+    .search-input:hover{
+        width: 40vw;
+    }
+    .slideshow{
+        width: 100vw;
+        height: 50vh;
+    }
+    .mainItems{
+        grid-template-columns:21vw 21vw 21vw;
+    }
+}
+@media screen and (max-width:900px) {   
+    .mainItems{
+        grid-template-columns: 80vw;
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width:600px) {
+    .search-input{
+        width: 30vw;
+        height: 4vh;
+        font-size: large;
+    }
+    .search-input:hover{
+        width: 40vw;
+    }
+    .slideshow{
+        width: 100vw;
+        height: 30vh;
+    }
+}

@@ -1,0 +1,450 @@
+.centers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.centers .cenP {
+  color: red;
+  font-weight: bolder;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: xx-large;
+}
+
+.centers .fa-arrow-left-long {
+  width: 10vw;
+  font-size: 50px;
+  color: red;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.centers .fa-arrow-right-long {
+  width: 10vw;
+  font-size: 50px;
+  color: red;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.mainCity {
+  width: 100vw;
+  height: 5vh;
+  background-color: red;
+  color: black;
+  font-size: xx-large;
+  font-weight: bolder;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mainCity .cityP {
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 0;
+}
+
+.mainCity .cityP:hover {
+  background-color: black;
+  color: red;
+}
+
+.offer {
+  margin-top: 5vh;
+  width: 100vw;
+  height: auto;
+  display: none;
+}
+
+.offerForm {
+  display: block;
+  width: 40vw;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  background-color: red;
+  line-height: 55px;
+  border-radius: 2.4mm;
+}
+
+.offerForm .offLab {
+  color: black;
+  font-weight: bold;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  cursor: pointer;
+  font-size: xx-large;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 2.4mm;
+}
+
+.offerForm .offLab:hover {
+  background-color: black;
+  color: red;
+}
+
+.ofInp {
+  width: 50%;
+  background-color: black;
+  color: red;
+  font-size: large;
+  font-weight: bold;
+  outline: none;
+  border: 1px solid black;
+  padding-left: 10px;
+  border-radius: 2.4mm;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.ofInp:hover {
+  border: 4px solid green;
+}
+
+.offerSubmit {
+  background-color: black;
+  font-size: xx-large;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 1.4mm;
+  color: red;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  border: 2px solid aqua;
+}
+
+.attrAddBtn {
+  -webkit-animation: attrBtn 1s infinite;
+          animation: attrBtn 1s infinite;
+}
+
+@-webkit-keyframes attrBtn {
+  0% {
+    padding: 0;
+    border: none;
+  }
+  100% {
+    border: 4px solid yellow;
+  }
+}
+
+@keyframes attrBtn {
+  0% {
+    padding: 0;
+    border: none;
+  }
+  100% {
+    border: 4px solid yellow;
+  }
+}
+
+.attrAddBtnG {
+  -webkit-animation: attrBtnG 1s infinite;
+          animation: attrBtnG 1s infinite;
+}
+
+@-webkit-keyframes attrBtnG {
+  0% {
+    padding: 0;
+    border: none;
+  }
+  100% {
+    border: 4px solid green;
+  }
+}
+
+@keyframes attrBtnG {
+  0% {
+    padding: 0;
+    border: none;
+  }
+  100% {
+    border: 4px solid green;
+  }
+}
+
+.jobs {
+  margin-top: 5vh;
+  width: 100vw;
+  height: auto;
+  display: none;
+}
+
+.jobsForm {
+  background-color: red;
+  width: 50%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  border: 2px solid black;
+  border-radius: 2mm;
+}
+
+.offLab {
+  color: black;
+  font-weight: bold;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  cursor: pointer;
+  font-size: xx-large;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 2.4mm;
+}
+
+.offLab:hover {
+  background-color: black;
+  color: red;
+}
+
+.jobsSec {
+  margin-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: red;
+  outline: none;
+  border: 7px solid black;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-radius: 2mm;
+}
+
+.jobsSec .opt {
+  background-color: red;
+  color: black;
+  font-weight: bolder;
+}
+
+.jobsTxt {
+  margin-top: 20px;
+  width: 80%;
+  height: 20vh;
+  background-color: red;
+  color: black;
+  resize: none;
+  outline: none;
+  border: 7px solid black;
+  padding: 5px;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 2mm;
+}
+
+.jobsTxt:hover {
+  padding: 10px;
+}
+
+.jobSub {
+  width: 7vw;
+  height: 5vh;
+  font-weight: bold;
+  border: 2px solid black;
+  outline: none;
+  border-radius: 2.4mm;
+  cursor: pointer;
+  background-color: black;
+  color: red;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.jobSub:hover {
+  background-color: aqua;
+}
+
+.jobsInp {
+  display: none;
+  width: 40vw;
+  outline: none;
+  padding-left: 20px;
+  font-size: x-large;
+  border: 2px solid black;
+  font-weight: bold;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: black;
+  color: red;
+  border-radius: 1.4mm;
+  margin: 10px;
+}
+
+.jobsInp:focus {
+  border: 4px solid black;
+  border-radius: 2.4mm;
+}
+
+.ghost {
+  position: absolute;
+  bottom: 10%;
+  right: -100%;
+  width: 15vw;
+  height: 10vh;
+  background-color: lime;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  -webkit-transition: 0.7;
+  transition: 0.7;
+  cursor: pointer;
+  border: 4px solid black;
+  border-radius: 4.4mm;
+  color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 900px) {
+  .centers .cenP {
+    font-size: x-large;
+  }
+  .centers .fa-arrow-left-long {
+    width: 10vw;
+    font-size: 40px;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  .centers .fa-arrow-right-long {
+    width: 10vw;
+    font-size: 40px;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  .mainCity {
+    font-size: x-large;
+    font-weight: bold;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .mainCity .cityP {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .offerForm {
+    height: 50vh;
+    line-height: 45px;
+  }
+  .offerForm .offLab {
+    font-size: x-large;
+  }
+  .offerForm .ofInp {
+    width: 70%;
+    font-size: small;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  .offerForm .ofInp:hover {
+    border: 4px solid green;
+  }
+  .offerForm .offerSubmit {
+    font-size: large;
+    font-weight: bold;
+  }
+  .jobsForm {
+    width: 70%;
+  }
+  .jobSub {
+    width: 17vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .centers .cenP {
+    font-size: x-large;
+  }
+  .centers .fa-arrow-left-long {
+    width: 10vw;
+    font-size: 30px;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  .centers .fa-arrow-right-long {
+    width: 10vw;
+    font-size: 30px;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  .offerForm {
+    width: 90vw;
+    height: 50vh;
+    line-height: 45px;
+  }
+  .offerForm .offLab {
+    font-size: large;
+  }
+  .offerForm .ofInp {
+    width: 80%;
+    font-size: small;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  .offerForm .ofInp:hover {
+    border: 4px solid green;
+  }
+  .offerForm .offerSubmit {
+    font-size: large;
+    font-weight: bold;
+  }
+  .jobsForm {
+    width: 70%;
+  }
+  .jobSub {
+    width: 17vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mainCity {
+    font-size: large;
+    font-weight: bold;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainCity .cityP {
+    width: 52%;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .jobsForm {
+    width: 90%;
+  }
+  .jobSub {
+    width: 17vw;
+  }
+}
+/*# sourceMappingURL=offer.css.map */
